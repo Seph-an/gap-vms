@@ -4,11 +4,11 @@ import { Providers } from "./Providers";
 import Head from "next/head";
 import { useEffect } from "react";
 
-export const metadata = {
-  title: "Visitors Management System | GRSL",
-  description: "Recruitment | Payroll Management | Jobs | Career Development",
-  favicon: "/favicon.ico",
-};
+// export const metadata = {
+//   title: "Visitors Management System | GRSL",
+//   description: "Recruitment | Payroll Management | Jobs | Career Development",
+//   favicon: "/favicon.ico",
+// };
 
 const RootLayout = ({ children }) => {
   // useEffect(() => {
@@ -27,6 +27,12 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <Head>
+        <title>GRSL-VMS</title>
+        <meta
+          name="description"
+          content="Recruitment | Payroll Management | Jobs | Career Development"
+        />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#59d6d7" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
