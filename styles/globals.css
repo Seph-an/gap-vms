@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  background-image: url("/assets/gap-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+}
+/* background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%); */
+
+.main:before {
+  background-color: #000;
+  opacity: 0.87;
+  /* filter: blur(100px) saturate(150%); */
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col mx-auto;
+}
+.select-custom {
+  font-size: 1rem; /* Adjust font size for better readability */
+  appearance: none; /* Remove default browser styling */
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #ccc; /* Your border style */
+  padding: 0.5rem 2rem; /* Adjust padding */
+  position: relative;
+  background-image: url("/assets/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 1rem center; /* Arrow position */
+  background-size: 1rem; /* Arrow size */
+}
+
+.select-custom option {
+  background-color: red;
+}

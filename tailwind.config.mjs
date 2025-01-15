@@ -10,6 +10,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "gap-bg": "#59d6d7",
+        "gap-dark": "#1e2529",
       },
     },
   },
