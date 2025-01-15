@@ -21,7 +21,7 @@
 
 .main:before {
   background-color: #000;
-  opacity: 0.87;
+  opacity: 0.93;
   /* filter: blur(100px) saturate(150%); */
   position: absolute;
   content: "";
