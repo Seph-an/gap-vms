@@ -1,3 +1,4 @@
+"use client";
 import "@styles/globals.css";
 import { Providers } from "./Providers";
 import Head from "next/head";
