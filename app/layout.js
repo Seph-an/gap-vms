@@ -1,41 +1,18 @@
-"use client";
 import "@styles/globals.css";
 import { Providers } from "./Providers";
-import Head from "next/head";
-import { useEffect } from "react";
 
-// export const metadata = {
-//   title: "Visitors Management System | GRSL",
-//   description: "Recruitment | Payroll Management | Jobs | Career Development",
-//   favicon: "/favicon.ico",
-// };
+export const metadata = {
+  title: "GRSL-VMS",
+  description: "Recruitment | Payroll Management | Jobs | Career Development",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
 
 const RootLayout = ({ children }) => {
-  // useEffect(() => {
-  //   if ("serviceWorker" in navigator) {
-  //     navigator.serviceWorker
-  //       .register("/service-worker.js")
-  //       .then((registration) => {
-  //         console.log("Service Worker registered:", registration);
-  //       })
-  //       .catch((error) => {
-  //         console.error("Service Worker registration failed:", error);
-  //       });
-  //   }
-  // }, []);
-
   return (
     <html lang="en">
-      <Head>
-        <title>GRSL-VMS</title>
-        <meta
-          name="description"
-          content="Recruitment | Payroll Management | Jobs | Career Development"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="theme-color" content="#59d6d7" />
-        <link rel="manifest" href="/manifest.json" />
-      </Head>
       <body>
         <div className="main"></div>
         <Providers>

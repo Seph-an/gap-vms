@@ -3,7 +3,7 @@ import { LogOut } from "lucide-react";
 
 const SignOut = ({ setCurrentDiv }) => {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="pb-14">
       <SignOutForm
         instruction={"Enter the phone number used when checking in:"}
         process={"out"}

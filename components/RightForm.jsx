@@ -18,9 +18,8 @@ const RightForm = ({ name, purpose, time, onComplete, setCurrentDiv }) => {
         <span className="text-gap-bg font-regular">{purpose}s</span> are
         appointments!
       </p>
-      {/* text-[#939498] */}
       <span className="text-white opacity-80  text-lg ">
-        Click the button below to Check in correctly in a few seconds.
+        Click the button below to Check in using the right form.
       </span>
       <button
         onClick={() => {

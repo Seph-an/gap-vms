@@ -61,7 +61,7 @@ export default function InOutForm({
   };
 
   return (
-    <div className=" flex w-[80%] pt-2 flex-col gap-8 items-center mx-auto">
+    <div className=" flex w-[80%] flex-col items-center mx-auto">
       {isSubmitting ? (
         <Processing process={process} />
       ) : isSuccess || isError ? (

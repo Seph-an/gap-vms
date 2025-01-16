@@ -13,11 +13,11 @@ const NoRecord = ({
   };
   const handleOnClick2 = () => setCurrentDiv(1);
   const btnStyle =
-    "cursor-pointer px-16 py-3 shadow-lg bg-gap-bg text-[#1e2529] rounded-md flex justify-center items-center";
+    "cursor-pointer px-16 py-3 shadow-lg font-bold bg-gap-bg text-[#1e2529] rounded-md flex justify-center items-center";
   return (
     <div className="flex flex-col gap-8 mt-5">
-      <p className="text-red-600 text-lg">OOPS!</p>
-      <p className="text-red-300 text-lg font-light">
+      <p className="text-red-600 text-xl font-semibold">OOPS!</p>
+      <p className="text-red-300 text-2xl font-semibold">
         No matching records found matching the contact{" "}
         <span className="underline font-medium text-red-600">
           {formatContact(Phone)}
@@ -25,12 +25,12 @@ const NoRecord = ({
         entered!
       </p>
 
-      <p className="text-[#939498] text-lg font-light">
+      <p className="text-[#939498] text-xl font-bold">
         If error persists proceed to front-desk for help.
       </p>
 
-      <div className="flex justify-center gap-10 ">
-        <div className="flex flex-col items-center gap-8 ">
+      <div className="flex justify-center gap-24 ">
+        <div className="flex flex-col items-center gap-5 ">
           <p className="text-red-300 text-lg font-light max-w-[250px]">
             To try a <span className="text-red-600">different number</span>{" "}
             click here 👇:
@@ -40,7 +40,7 @@ const NoRecord = ({
           </button>
         </div>
 
-        <div className="flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center gap-5">
           <p className="text-red-300 text-lg font-light max-w-[260px]">
             To <span className="text-red-600">proceed to front-desk,</span>{" "}
             click here 👇 <span className="text-red-600">then</span> proceed :

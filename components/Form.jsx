@@ -23,7 +23,7 @@ export default function Form({
         icon={true}
         position={"mr-auto"}
       />
-      <div className="p-4 rounded-lg shadow-lg  border-slate-400 border mt-5">
+      <div className=" p-4 rounded-lg shadow-lg  border-slate-400 border mt-5">
         <h1 className="text-center text-xl font-medium  text-white mb-3">
           Check in Form
         </h1>
@@ -36,27 +36,27 @@ export default function Form({
           onSubmit={handleSubmit}
           className="grid grid-cols-1 md:grid-cols-2 gap-4"
         >
-          {/* Name Input */}
+          {/* Email Input */}
           <div>
             <label
-              htmlFor="name"
+              htmlFor="email"
               className="block text-sm font-medium text-white opacity-70"
             >
-              Name
+              Email
             </label>
             <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
               className={`mt-1 text-gap-bg bg-transparent block w-full px-3 py-2 border ${
-                formErrors.name ? "border-red-500" : "border-slate-400"
+                formErrors.email ? "border-red-500" : "border-slate-400"
               } rounded-md shadow-sm focus:outline-none focus:ring-gap-bg focus:border-gap-bg`}
             />
-            {formErrors.name && (
+            {formErrors.email && (
               <p className="text-red-500 text-sm mt-1">
-                Name must be at least 2 letters.
+                Enter a valid email address.
               </p>
             )}
           </div>
@@ -86,27 +86,27 @@ export default function Form({
             )}
           </div>
 
-          {/* Email Input */}
+          {/* Name Input */}
           <div>
             <label
-              htmlFor="email"
+              htmlFor="name"
               className="block text-sm font-medium text-white opacity-70"
             >
-              Email
+              Name
             </label>
             <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
               onChange={handleChange}
               className={`mt-1 text-gap-bg bg-transparent block w-full px-3 py-2 border ${
-                formErrors.email ? "border-red-500" : "border-slate-400"
+                formErrors.name ? "border-red-500" : "border-slate-400"
               } rounded-md shadow-sm focus:outline-none focus:ring-gap-bg focus:border-gap-bg`}
             />
-            {formErrors.email && (
+            {formErrors.name && (
               <p className="text-red-500 text-sm mt-1">
-                Enter a valid email address.
+                Name must be at least 2 letters.
               </p>
             )}
           </div>
@@ -148,14 +148,9 @@ export default function Form({
             />
             <label htmlFor="privacy" className="text-sm font-medium text-white">
               I accept all{" "}
-              <a
-                href="/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gap-bg underline hover:text-gap-bg-dark"
-              >
+              <span className="text-gap-bg underline">
                 Privacy Policy Terms
-              </a>{" "}
+              </span>{" "}
               regarding my submitted data.
             </label>
           </div>

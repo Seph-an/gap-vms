@@ -17,12 +17,10 @@
   padding: 120px 24px 160px 24px;
   pointer-events: none;
 }
-/* background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%); */
 
 .main:before {
   background-color: #000;
   opacity: 0.93;
-  /* filter: blur(100px) saturate(150%); */
   position: absolute;
   content: "";
   z-index: 2;
@@ -32,19 +30,19 @@
 }
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col mx-auto;
+  @apply relative z-10 flex justify-center items-center flex-col h-screen w-full;
 }
 .select-custom {
-  font-size: 1rem; /* Adjust font size for better readability */
-  appearance: none; /* Remove default browser styling */
-  background-color: transparent; /* Transparent background */
-  border: 1px solid #ccc; /* Your border style */
-  padding: 0.5rem 2rem; /* Adjust padding */
+  font-size: 1rem;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.5rem 2rem;
   position: relative;
   background-image: url("/assets/chevron-down.svg");
   background-repeat: no-repeat;
-  background-position: right 1rem center; /* Arrow position */
-  background-size: 1rem; /* Arrow size */
+  background-position: right 1rem center;
+  background-size: 1rem;
 }
 
 .select-custom option {

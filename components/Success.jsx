@@ -74,7 +74,12 @@ const Success = ({
   return (
     <div className="text-center flex flex-col gap-8 text-white items-center">
       {data.data.Message !== "DC" && (
-        <Check color="#51D4D6" size={42} strokeWidth={2} />
+        <Check
+          color="#51D4D6"
+          size={42}
+          strokeWidth={2}
+          className="transform translate-y-[15px]"
+        />
       )}
       {data.data?.NoRecord && (
         <NoRecord
@@ -212,7 +217,7 @@ const Success = ({
           setCurrentDiv={setCurrentDiv}
           label={"OK"}
           icon={false}
-          position={"mx-auto font-bold"}
+          position={"mx-auto font-bold px-24"}
         />
       )}
     </div>
